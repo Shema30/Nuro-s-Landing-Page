@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(210, 210, 158);
+}
+
 .coming_soon {
     position: absolute;
     width: 15%;
@@ -18,7 +22,6 @@
     font-size: 50px;
     font-family: "Londrina Outline", sans-serif;
     text-align: center;
-    color: black;
 }
 
 .bigger_screen_img {
@@ -32,6 +35,11 @@
 
 @media only screen and (max-width: 1000px) {
     /* Hide the larger image on smaller screens */
+
+    .coming_soon {
+        display: none;
+    }
+
    .bigger_screen_img {
     display: none;
    }
