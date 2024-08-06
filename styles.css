@@ -11,7 +11,7 @@ body {
 .coming_soon {
     position: absolute;
     width: 15%;
-    top: 50px;
+    height: 100vh;
     left: 30px;
     display: flex;
     flex-direction: column;
@@ -21,12 +21,15 @@ body {
 .coming_soon h1 {
     font-size: 50px;
     font-family: "Londrina Outline", sans-serif;
+    color: inherit;
     text-align: center;
 }
 
 .bigger_screen_img {
+    display: flex ;
     width: 100%;
     height: 100vh;
+    margin: 0;
 }
 
 .smaller_screen_img {
@@ -49,5 +52,11 @@ body {
         display: block;
         width: 100%;
         height: auto;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .bigger_screen_img {
+        height: 100%;
     }
 }
